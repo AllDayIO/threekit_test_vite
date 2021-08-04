@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      
+    </div>
+    <script type="module" src="/main.js"></script>
+    <div id="player"></div>
+    <script src="https://preview.threekit.com/app/js/threekit-player.js"></script>
+      <script>
+          window
+            .threekitPlayer({
+              authToken: "INSERT_AUTH_TOKEN_HERE",
+              el: document.getElementById("player"),
+              assetId: "d05f1ef8-7384-4f6b-9338-cddf718072e8",
+              cache: {
+                maxAge: 100,
+                scope: "v1.0"
+              }
+            })
+            .then(function(player) {
+              window.player = player;
+            });
+      </script>
+      
+  </body>
+</html>
