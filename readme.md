@@ -8,3 +8,4 @@ or
 ```yarn dev```
 or
 ```npm run dev```
+3. Add Auth Token in `index.html`
